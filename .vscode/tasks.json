@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // Docker Compose Up | Debug task
+            //
+            // This task is used for local deployment of all needed infrastructure for
+            // local service debugging. Thus do not forget to place here all
+            // dependencies you need in order to debug app properly.
+            "label": "Docker Compose Up | Debug",
+            "type": "docker-compose",
+            "dockerCompose": {
+                "up": {
+                    "detached": true,
+                    "build": true,
+                    "services": [
+                        // place here services to run exept developed one
+                    ]
+                },
+                "envFile": "${workspaceFolder}/settings/docker.env",
+                "files": [
+                    "${workspaceFolder}/docker-compose.yml"
+                ]
+            }
+        },
+        {
+            // Docker Compose Up | Debug task
+            //
+            // This task is used for local deployment of entire service and it's
+            // infrstracture dependencies for manual and prod-like testing purposes. It
+            // runs everything in docker-compose.yml file.
+            "label": "Docker Compose Up | Docker",
+            "type": "docker-compose",
+            "dockerCompose": {
+                "up": {
+                    "detached": true,
+                    "build": true,
+                },
+                "envFile": "${workspaceFolder}/settings/docker.env",
+                "files": [
+                    "${workspaceFolder}/docker-compose.yml"
+                ]
+            }
+        },
+    ],
+}

@@ -1,0 +1,43 @@
+{
+    // linting & formatting
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "cSpell.words": [
+        "camelcase",
+        "caseconverter",
+        "cookiecutter",
+        "dropin",
+        "errin",
+        "errout",
+        "fastapi",
+        "fundom",
+        "psutil",
+        "PYTHONFAULTHANDLER",
+        "PYTHONHASHSEED",
+        "PYTHONUNBUFFERED",
+        "uvicorn",
+        "yastyleguide",
+        "pydantic",
+        "toolz",
+        "sqlalchemy",
+        "DBAPI",
+        "poolclass",
+        "asyncpg",
+        "sessionmaker",
+        "aiohttp",
+        "onupdate",
+        "selectin",
+        "backref",
+        "ondelete",
+    ],
+    // Uncomment and configure section below for custom commmit message format. It helps
+    // to write formatted commit messages, but does not validate them.
+    // "vscodeGitCommit.template": [
+    //     "#{issue-number}:{message}"
+    // ]
+}
