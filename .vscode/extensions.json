@@ -1,0 +1,30 @@
+{
+    "recommendations": [
+        // Better git commit messages (as an option, you might want to use commitizen
+        // which is totally acceptable, but not configured by default).
+        "rioukkevin.vscode-git-commit",
+        // Official python extensions.
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        // Generating docstring.
+        "njpwerner.autodocstring",
+        // Spell everything right!
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-russian",
+        // Support for .env files.
+        "IronGeek.vscode-env",
+        // Show problems right in editor.
+        "usernamehw.errorlens",
+        // Better git experience in VS Code.
+        "eamodio.gitlens",
+        // Support for Docker in VS Code (required for docker-compose tasks).
+        "ms-azuretools.vscode-docker",
+        // As an option for testing requests (Postman inside VS Code).
+        "rangav.vscode-thunder-client",
+        // Support for .yaml filter.
+        "redhat.vscode-yaml",
+        // Make .http/.rest files declarative API tests. As an option for testing
+        // request.
+        "humao.rest-client",
+    ],
+}
